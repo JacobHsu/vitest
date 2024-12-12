@@ -78,3 +78,11 @@ AssertionError: Snapshot `Notification component > renders the correct style for
   +   <p class="notification__texts"></p><button title="close" class="notification__button"> ✕ </button>
     </div>"
 ```
+
+
+### Mocking 
+
+[vi.spyOn](https://vitest.dev/api/vi.html#vi-spyon)
+
+`vi.spyOn(axios, 'get').mockResolvedValueOnce({ data: mockPost })`
+
