@@ -58,3 +58,23 @@ yarn lint
  Test Files  1 passed (1)
       Tests  6 passed (6)
  ```
+
+
+### [snapshot](https://cn.vitest.dev/guide/snapshot)
+
+```js
+    <p class="notification__texts">
+        {{ message }}
+    </p>
+```        
+
+```bash
+AssertionError: Snapshot `Notification component > renders the correct style for error 1` mismatched
+  - Expected  - 1
+  + Received  + 1
+
+    "<div role="alert" class="notification notification--error">
+  -   <p class="notification__text"></p><button title="close" class="notification__button"> ✕ </button>
+  +   <p class="notification__texts"></p><button title="close" class="notification__button"> ✕ </button>
+    </div>"
+```
